@@ -1,0 +1,9 @@
+---
+# playbook.yml
+- name: 'Provision Image'
+  hosts: default
+  become: true
+
+  tasks:
+    - name: update packages
+      command: echo "Hello Ansible"
